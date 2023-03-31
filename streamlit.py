@@ -43,4 +43,7 @@ if uploaded_file is not None:
     st.write('Notes:')
     st.write('1. The model is a first simplest baseline version, the prediction result will be improved in later versions')
     st.write('2. The model can identify up to 120 types of dog breeds')
+    option = st.selectbox(
+    'All Breeds',
+    class_names)
 
