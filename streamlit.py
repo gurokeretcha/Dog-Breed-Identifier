@@ -12,7 +12,7 @@ IMG_SIZE  = (256, 256)
 IMG_SHAPE = IMG_SIZE +(3,)
 
 #1. load model
-@st.cache
+@st.cache_resource
 def load_model():
     return tf.keras.models.load_model('pretrained_models/EfficientNetB3_Model.h5')
 
